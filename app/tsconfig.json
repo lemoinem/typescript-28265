@@ -1,0 +1,25 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+	  "plugins": [
+		{
+		  "name": "tslint-language-service",
+		  "disableNoUnusedVariableRule": true,
+		  "alwaysShowRuleFailuresAsWarnings": true
+		}
+	  ],
+	  "baseUrl": "src",
+	  "outDir": "dist",
+	  "sourceMap": true,
+	  "declaration": false,
+	  "module": "commonjs",
+	  "moduleResolution": "node",
+	  "emitDecoratorMetadata": true,
+	  "experimentalDecorators": true,
+	  "target": "es6",
+	  "typeRoots": [
+		"node_modules/@types"
+	  ]
+	}
+  }
+  

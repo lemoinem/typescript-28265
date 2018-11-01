@@ -1,0 +1,38 @@
+{
+  "name": "@typescript-28265/app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npm run unlink-local",
+    "unlink-local": "cmd /c if exist .\\node_modules\\@typescript-28265\\test-module rmdir /s /q .\\node_modules\\@typescript-28265\\test-module",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/tsc"
+  },
+  "author": "",
+  "license": "",
+  "private": true,
+  "dependencies": {
+    "@angular/cdk": "^6.3.2",
+    "@angular/common": "^6.0.7",
+    "@angular/compiler": "^6.0.7",
+    "@angular/core": "^6.0.7",
+    "@angular/forms": "^6.0.7",
+    "@angular/http": "^6.0.7",
+    "@angular/material": "^6.3.2",
+    "@angular/platform-browser": "^6.0.7",
+    "@angular/platform-browser-dynamic": "^6.0.7",
+    "@angular/platform-server": "^6.0.7",
+    "@angular/router": "^6.0.7",
+    "core-js": "^2.5.7",
+    "rxjs": "^6.2.1",
+    "zone.js": "^0.8.26",
+    "@typescript-28265/test-module": "file:../test-module/dist"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^0.6.8",
+    "@angular/cli": "^6.0.8",
+    "@angular/compiler-cli": "^6.0.7",
+    "typescript": "~2.7.2"
+  }
+}

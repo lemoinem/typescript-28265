@@ -1,0 +1,28 @@
+{
+    "name": "@typescript-28265/test-module",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "private": true,
+    "scripts": {
+      "transpile": "ngc",
+      "package": "rollup -c",
+      "minify": "uglifyjs dist/bundles/module-test.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/module-test.umd.min.js",
+      "test": "karma start",
+      "build": "npm run transpile && npm run package && npm run minify"
+    },
+    "author": "",
+    "license": "ISC",
+    "peerDependencies": {
+      "@angular/common": "^6.0.4",
+      "@angular/compiler": "^6.0.4",
+      "@angular/compiler-cli": "^6.0.4",
+      "@angular/core": "^6.0.4",
+      "core-js": "^2.4.1",
+      "reflect-metadata": "^0.1.10",
+      "rxjs": "^6.2.0",
+      "zone.js": "^0.8.26"
+    }
+  }
+  

@@ -1,0 +1,67 @@
+{
+  "name": "@typescript-28265/test-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": true,
+  "scripts": {
+    "transpile": "ngc",
+    "package": "rollup -c",
+    "minify": "uglifyjs dist/bundles/module-test.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/module-test.umd.min.js",
+    "test": "karma start",
+    "build": "npm run transpile && npm run package && npm run minify"
+  },
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "@angular/common": "^6.0.4",
+    "@angular/compiler": "^6.0.4",
+    "@angular/compiler-cli": "^6.0.4",
+    "@angular/core": "^6.0.4",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^6.2.0",
+    "zone.js": "^0.8.26"
+  },
+  "devDependencies": {
+    "@angular-cli/ast-tools": "^1.0.16",
+    "@angular/common": "^6.0.4",
+    "@angular/compiler": "^6.0.4",
+    "@angular/compiler-cli": "^6.0.4",
+    "@angular/core": "^6.0.4",
+    "@ngtools/webpack": "^1.5.3",
+    "@types/core-js": "^0.9.42",
+    "awesome-typescript-loader": "^2.2.4",
+    "concurrently": "^3.5.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "core-js": "^2.4.1",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.9.0",
+    "null-loader": "^0.1.1",
+    "raw-loader": "^0.5.1",
+    "reflect-metadata": "^0.1.10",
+    "rimraf": "^2.6.1",
+    "rollup": "^0.47.6",
+    "rxjs": "6.2.0",
+    "shelljs": "^0.7.8",
+    "ts-helpers": "^1.1.2",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.5.0",
+    "tslint-eslint-rules": "^4.1.1",
+    "tslint-language-service": "^0.9.6",
+    "tslint-loader": "^2.1.5",
+    "tslint-microsoft-contrib": "^5.0.1",
+    "typedoc": "^0.5.10",
+    "typescript": "^2.7.2",
+    "uglify-js": "^3.0.27",
+    "webpack": "^3.4.0",
+    "zone.js": "^0.8.26"
+  },
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "rollup-plugin-peer-deps-external": "^2.2.0"
+  }
+}
