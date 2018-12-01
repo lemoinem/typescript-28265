@@ -15,7 +15,6 @@
 		"noUnusedParameters": false,
 		"outDir": "dist",
 		"paths": {
-			"@angular/core": ["node_modules/@angular/core"],
 			"rxjs/*": ["node_modules/rxjs/*"],
 		},
 		"plugins": [

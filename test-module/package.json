@@ -6,9 +6,9 @@
   "types": "dist/index.d.ts",
   "private": true,
   "scripts": {
-    "transpile": "ngc",
-    "package": "rollup -c",
-    "minify": "uglifyjs dist/bundles/module-test.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/module-test.umd.min.js",
+    "transpile": "./node_modules/.bin/tsc",
+    "package": "./node_modules/.bin/rollup -c",
+    "minify": "./node_modules/.bin/uglifyjs dist/bundles/module-test.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/module-test.umd.min.js",
     "test": "karma start",
     "build": "npm run transpile && npm run package && npm run minify"
   },
@@ -53,7 +53,7 @@
     "tslint-loader": "^2.1.5",
     "tslint-microsoft-contrib": "^5.0.1",
     "typedoc": "^0.5.10",
-    "typescript": "^2.7.2",
+    "typescript": "next",
     "uglify-js": "^3.0.27",
     "webpack": "^3.4.0",
     "zone.js": "^0.8.26"
